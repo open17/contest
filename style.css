@@ -6,6 +6,9 @@
 body{
     background-color: gray;
 }
+div{
+    overflow:auto;
+}
 .header{
     color: azure;
     width:100vw;
@@ -20,26 +23,26 @@ li{
 }
 .left{
     position: absolute;
-    top:20vh;
+    top:15vh;
     left:0vw;
     width:22vw;
-    height: 150vh;
+    height: 85vh;
     background-color: rgb(255, 255, 255);
 }
 .main{
     position: absolute;
-    top:20vh;
+    top: 15vh;
     left:22vw;
     width: 54vw;
-    height: 150vh;
+    height: 85vh;
     padding-left: 1vw;
     padding-right: 1vw;
 }
 .right{
     position: absolute;
-    top:20vh;
+    top:15vh;
     right:0vw;
     width:22vw;
-    height:150vh;
+    height:85vh;
     background-color: rgb(255, 255, 255);
 }
