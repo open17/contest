@@ -46,3 +46,36 @@ li{
     height:85vh;
     background-color: rgb(255, 255, 255);
 }
+
+button {
+    border: none;
+    display: inline-block;
+    color: #ffffff;
+    border-radius: 27px;
+    text-align: center;
+    background-image: linear-gradient(to right, #ff3300 0%, #eb4402 25%, #ffc404 50%, #eb4402 75%, #ff3300 100%);
+    background-size: 200%;
+    animation: colorGradient 1.5s infinite;
+}
+ 
+@keyframes colorGradient {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+::-webkit-scrollbar { 
+    width: 1vh;    
+    height: 1vw;
+  }
+  ::-webkit-scrollbar-corner{
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background:  transparent;
+  }
+  ::-webkit-scrollbar-track {
+    background:  transparent;
+  }

@@ -5,7 +5,22 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="header"><h1>CP:Algorithm and Data Structure</h1></div>
+        <div class="header">
+          <h1>CP:Algorithm and Data Structure</h1>
+          <button onclick="change()">refresh</button>
+          <select name="lan" id="lan" >
+            <option value="">c++</option>
+            <option value="py">python</option>
+            <option value="java">java</option>
+            <option value="go">go</option>
+          </select>
+          <select name="theme" id="theme" >
+            <option>太空白</option>
+            <option>樱花粉</option>
+            <option>数码空间</option>
+            <option>冰川蓝</option>
+          </select>
+        </div>
         <div class="left">
             <h1>目录</h1>
             <ul>
@@ -117,19 +132,39 @@
                   </li>
             </ul>
         </div>
-    <script>
-        var h={"并查集":"Buf","数论合集":"Math","快速入门":"Basic"}
-        var li=document.getElementsByTagName("li");
-        for(let i=0;i<li.length;i++){
-            li[i].onclick = function(){
-                event.stopPropagation();
-                var x=h[this.innerHTML];
-                if (x!=undefined){
-                    var a=document.getElementById("mm");
-                    a.innerHTML=" <iframe src=\"./"+x+".html\" frameborder=\"0\" width=\"100%\" height=\"100%\" ></iframe>";
-                }
-            }
+      <script>
+      //空即是c++
+      let language="";
+      function change() {
+        var a=document.getElementById("lan");
+        language=a.options[a.selectedIndex].value;
+        var b=document.getElementById("theme").selectedIndex;
+        if (b==0) {
+          document.body.style["background-color"]="gray";
+          document.getElementsByClassName("header")[0].style.color="azure";
+          document.getElementsByClassName("left")[0].style["background-color"] ="white";
+          document.getElementsByClassName("right")[0].style["background-color"]="white";
         }
-    </script>
+        else if (b==1) {
+          document.body.style["background-color"]="rgb(255 230 230)";
+          document.getElementsByClassName("left")[0].style["background-color"] ="rgb(255 230 230)";
+          document.getElementsByClassName("right")[0].style["background-color"]="rgb(255 230 230)";
+          document.getElementsByClassName("header")[0].style.color="#9dc3e2";
+
+        }
+      }
+      var h = { "并查集": "Buf", "数论合集": "Math", "快速入门": "Basic" }
+      var li = document.getElementsByTagName("li");
+      for (let i = 0; i < li.length; i++) {
+        li[i].onclick = function () {
+          event.stopPropagation();
+          var x = h[this.innerHTML];
+          if (x != undefined) {
+            var a = document.getElementById("mm");
+            a.innerHTML = " <iframe src=\"./" + x +language+ ".html\" frameborder=\"0\" width=\"100%\" height=\"100%\" ></iframe>";
+          }
+        }
+      }
+      </script>
     </body>
 </html>
