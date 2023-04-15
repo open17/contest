@@ -9,10 +9,11 @@
           <h1>CP:Algorithm and Data Structure</h1>
           <button onclick="change()">refresh</button>
           <select name="lan" id="lan" >
-            <option value="">c++</option>
             <option value="py">python</option>
+            <option value="">c++</option>
             <option value="java">java</option>
             <option value="go">go</option>
+            <option value="C">c</option>
           </select>
           <select name="theme" id="theme" >
             <option>太空白</option>
@@ -24,6 +25,12 @@
         <div class="left">
             <h1>目录</h1>
             <ul>
+              <li> 前言
+                <ul>
+                  <li>网站使用指南</li>
+                  <li>其他</li>
+                </ul>
+              </li>
                 <li>&#x8BED;&#x8A00;&#x57FA;&#x7840;
                   <ul>
                     <li>&#x5FEB;&#x901F;&#x5165;&#x95E8;</li>
@@ -45,6 +52,7 @@
                 </li>
                 <li>&#x52A8;&#x6001;&#x89C4;&#x5212;
                   <ul>
+                    <li>DP入门</li>
                     <li>&#x57FA;&#x7840;&#x6A21;&#x578B;</li>
                     <li>&#x80CC;&#x5305;&#x6A21;&#x578B;</li>
                     <li>&#x72B6;&#x6001;&#x673A;DP</li>
@@ -78,17 +86,19 @@
               </ul>
         </div>
         <div class="main" id="mm">
-            <iframe src="./Basic.html" frameborder="0"  width="100%" height="100%" >
-            </iframe>
         </div>
         <div class="right">
             <h1>目录</h1>
             <ul>
                 <li>&#x57FA;&#x7840;&#x7B97;&#x6CD5;
                     <ul>
+                      <li>DFS</li>
+                      <li>BFS</li>
+                      <li>中心扩散</li>
+                      <li>二分查找</li>
+                      <li>倍增</li>
                       <li>&#x53CC;&#x6307;&#x9488;</li>
                       <li>&#x524D;&#x7F00;&#x548C;&#x4E0E;&#x5DEE;&#x5206;</li>
-                      <li>&#x4E8C;&#x5206;</li>
                       <li>&#x6ED1;&#x52A8;&#x7A97;&#x53E3;</li>
                       <li>&#x5355;&#x8C03;&#x6808;</li>
                       <li>&#x5355;&#x8C03;&#x961F;&#x5217;</li>
@@ -134,7 +144,9 @@
         </div>
       <script>
       //空即是c++
-      let language="";
+      let language="py";
+      var a = document.getElementById("mm");
+      a.innerHTML = " <iframe src=\"./" + "Basic" +language+ ".html\" frameborder=\"0\" width=\"100%\" height=\"100%\" ></iframe>";
       function change() {
         var a=document.getElementById("lan");
         language=a.options[a.selectedIndex].value;
@@ -153,7 +165,7 @@
 
         }
       }
-      var h = { "并查集": "Buf", "数论合集": "Math", "快速入门": "Basic" }
+      var h = { "并查集": "Buf", "数论合集": "Math", "快速入门": "Basic" ,"DP入门":"Dprumen","树状数组":"SegmentTree","区间合并":"qujianhebing","摩尔投票":"moertoupiao","快速选择":"Qselect","二分查找":"BinarySearch"}
       var li = document.getElementsByTagName("li");
       for (let i = 0; i < li.length; i++) {
         li[i].onclick = function () {
