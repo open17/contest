@@ -9,8 +9,8 @@
           <h1>CP:Algorithm and Data Structure</h1>
           <button onclick="change()">refresh</button>
           <select name="lan" id="lan" >
-            <option value="py">python</option>
             <option value="">c++</option>
+            <option value="py">python</option>
             <option value="java">java</option>
             <option value="go">go</option>
             <option value="C">c</option>
@@ -69,6 +69,7 @@
                     <li>&#x53CC;&#x5411;&#x641C;&#x7D22;</li>
                     <li>A*</li>
                     <li>&#x542F;&#x53D1;&#x5F0F;&#x641C;&#x7D22;</li>
+                    <li>莫里斯</li>
                   </ul>
                 </li>
 
@@ -144,13 +145,24 @@
                       <li>cf构造题合集</li>
                     </ul>
                   </li>
+                  <li>字符串算法
+                    <ul>
+                      <li>KMP</li>
+                      <li>BF</li>
+                      <li>字典树</li>
+                      <li>后缀自动机</li>
+                      <li>前缀自动机</li>
+                      <li>自动AC机</li>
+                      <li>马拉车</li>
+                    </ul>
+                  </li>
             </ul>
         </div>
       <script>
       //空即是c++
-      let language="py";
+      let language="";
       var a = document.getElementById("mm");
-      a.innerHTML = " <iframe src=\"./" + "Basic" +language+ ".html\" frameborder=\"0\" width=\"100%\" height=\"100%\" ></iframe>";
+      a.innerHTML = " <iframe src=\"./" + "compass" +language+ ".html\" frameborder=\"0\" width=\"100%\" height=\"100%\" ></iframe>";
       function change() {
         var a=document.getElementById("lan");
         language=a.options[a.selectedIndex].value;
@@ -183,7 +195,10 @@
       "线性代数Ⅱ":"LAChapter2",
       "线性代数Ⅲ":"LAChapter3",
       "线性代数Ⅳ":"LAChapter4",
-      "常用语法糖":"candy"
+      "常用语法糖":"Candy",
+      "最小生成树":"MST",
+      "拓扑排序":"TopologicalSorting",
+      "网站使用指南":"compass"
     }
       var li = document.getElementsByTagName("li");
       for (let i = 0; i < li.length; i++) {
