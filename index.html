@@ -7,8 +7,8 @@
     <body>
         <div class="header">
           <h1>CP:Algorithm and Data Structure</h1>
-          <button onclick="change()">refresh</button>
-          <select name="lan" id="lan" >
+          <!-- <button onclick="change()">refresh</button> -->
+          <select name="lan" id="lan" onchange="changeLan(this)">
             <option value="">c++</option>
             <option value="py">python</option>
             <option value="java">java</option>
@@ -161,26 +161,47 @@
       <script>
       //空即是c++
       let language="";
-      var a = document.getElementById("mm");
-      a.innerHTML = " <iframe src=\"./" + "compass" +language+ ".html\" frameborder=\"0\" width=\"100%\" height=\"100%\" ></iframe>";
-      function change() {
-        var a=document.getElementById("lan");
-        language=a.options[a.selectedIndex].value;
-        var b=document.getElementById("theme").selectedIndex;
-        if (b==0) {
-          document.body.style["background-color"]="gray";
-          document.getElementsByClassName("header")[0].style.color="azure";
-          document.getElementsByClassName("left")[0].style["background-color"] ="white";
-          document.getElementsByClassName("right")[0].style["background-color"]="white";
-        }
-        else if (b==1) {
-          document.body.style["background-color"]="rgb(255 230 230)";
-          document.getElementsByClassName("left")[0].style["background-color"] ="rgb(255 230 230)";
-          document.getElementsByClassName("right")[0].style["background-color"]="rgb(255 230 230)";
-          document.getElementsByClassName("header")[0].style.color="#9dc3e2";
-
-        }
+      //默认页面：compass
+      let x="compass";
+      //目标元素
+      let a= document.getElementById("mm");
+      //如果在out内则不切换语言
+      const out = new Set(["compass","LAChapter1","LAChapter2","LAChapter3","LAChapter4"]);
+      //更新页面函数
+      function refresh() {
+        var lans="";
+        if (!out.has(x)) {
+            lans=language;
+        } 
+        a.innerHTML = " <iframe src=\"./" + x +lans+ ".html\" frameborder=\"0\" width=\"100%\" height=\"100%\" ></iframe>";
       }
+      //初始化页面
+      refresh();
+
+      //监听壁纸变化
+      var s=document.getElementById("theme");
+      s.onchange=function(){
+          var b =s.selectedIndex;
+          if (b==0) {
+            document.body.style["background-color"]="gray";
+            document.getElementsByClassName("header")[0].style.color="azure";
+            document.getElementsByClassName("left")[0].style["background-color"] ="white";
+            document.getElementsByClassName("right")[0].style["background-color"]="white";
+          }
+          else if (b==1) {
+            document.body.style["background-color"]="rgb(255 230 230)";
+            document.getElementsByClassName("left")[0].style["background-color"] ="rgb(255 230 230)";
+            document.getElementsByClassName("right")[0].style["background-color"]="rgb(255 230 230)";
+            document.getElementsByClassName("header")[0].style.color="#9dc3e2";
+          }
+      }
+
+      //语言变化
+      function changeLan(that) {
+        language=that.value;
+        refresh();
+      }
+      //对应网址
       var h = { 
         "并查集": "Buf", 
       "数论合集": "Math", 
@@ -199,15 +220,16 @@
       "最小生成树":"MST",
       "拓扑排序":"TopologicalSorting",
       "网站使用指南":"compass"
-    }
+      }
+      //监听li点击
       var li = document.getElementsByTagName("li");
       for (let i = 0; i < li.length; i++) {
         li[i].onclick = function () {
+          //停止冒泡
           event.stopPropagation();
-          var x = h[this.innerHTML];
+          x = h[this.innerHTML];
           if (x != undefined) {
-            var a = document.getElementById("mm");
-            a.innerHTML = " <iframe src=\"./" + x +language+ ".html\" frameborder=\"0\" width=\"100%\" height=\"100%\" ></iframe>";
+            refresh();
           }
         }
       }
