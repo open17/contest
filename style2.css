@@ -18,7 +18,7 @@
     top:17vh;
     left:2vw;
     width:18vw;
-    height: 85vh;
+    height: 83vh;
     background-color: rgb(255, 255, 255);
 }
 .main{
@@ -26,16 +26,16 @@
     top: 17vh;
     left:22vw;
     width: 54vw;
-    height: 85vh;
+    height: 83vh;
     padding-left: 1vw;
     padding-right: 1vw;
 }
 .right{
     position: absolute;
-    top:15vh;
+    top:17vh;
     right:2vw;
     width:22vw;
-    height:85vh;
+    height:83vh;
     background-color: rgb(255, 255, 255);
 }
 ::-webkit-scrollbar { 
