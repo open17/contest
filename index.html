@@ -1,238 +1,307 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>contest</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Title</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
     </head>
     <body>
-        <div class="header">
-          <h1>CP:Algorithm and Data Structure</h1>
-          <!-- <button onclick="change()">refresh</button> -->
-          <select name="lan" id="lan" onchange="changeLan(this)">
-            <option value="">c++</option>
-            <option value="py">python</option>
-            <option value="java">java</option>
-            <option value="go">go</option>
-            <option value="C">c</option>
-          </select>
-          <select name="theme" id="theme" >
-            <option>太空白</option>
-            <option>樱花粉</option>
-            <option>数码空间</option>
-            <option>冰川蓝</option>
-          </select>
+        <div id="offcanvas-usage1" uk-offcanvas>
+            <div class="uk-offcanvas-bar">
+        
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+        
+                <h3>网站指南</h3>
+        
+                <ol>
+                    <li>&#x5982;&#x679C;&#x70B9;&#x51FB;&#x76EE;&#x5F55;&#x6CA1;&#x6709;&#x53CD;&#x5E94;&#xFF0C;&#x8BC1;&#x660E;&#x8BE5;&#x90E8;&#x5206;&#x6682;&#x672A;&#x66F4;&#x65B0;</li>
+                    <li>&#x5982;&#x679C;&#x70B9;&#x51FB;&#x540E;&#x663E;&#x793A;404&#xFF0C;&#x5219;&#x8868;&#x660E;&#x8BE5;&#x90E8;&#x5206;&#x5B58;&#x5728;&#x5185;&#x5BB9;&#xFF0C;&#x4F46;&#x6CA1;&#x6709;&#x8BE5;&#x8BED;&#x8A00;&#x7248;&#x672C;</li>
+                    <li>&#x5982;&#x679C;&#x60F3;&#x8981;&#x67E5;&#x770B;404&#x5185;&#x5BB9;&#xFF0C;&#x8BF7;&#x5207;&#x6362;&#x8BED;&#x8A00;&#x7248;&#x672C;</li>
+                    <li>&#x76EE;&#x524D;c++&#x548C;py&#x5185;&#x5BB9;&#x4E3A;&#x4E3B;</li>
+                    </ol>
+            </div>
         </div>
-        <div class="left">
-            <h1>目录</h1>
-            <ul>
-              <li> 前言
-                <ul>
-                  <li>网站使用指南</li>
-                  <li>其他</li>
-                </ul>
-              </li>
-                <li>&#x8BED;&#x8A00;&#x57FA;&#x7840;
-                  <ul>
-                    <li>&#x5FEB;&#x901F;&#x5165;&#x95E8;</li>
-                    <li>&#x57FA;&#x7840;&#x6570;&#x636E;&#x7ED3;&#x6784;</li>
-                    <li>&#x5E38;&#x7528;&#x8BED;&#x6CD5;&#x7CD6;</li>
-                  </ul>
-                </li>
-                <li>&#x6570;&#x636E;&#x7ED3;&#x6784;
-                  <ul>
-                    <li>&#x5E76;&#x67E5;&#x96C6;</li>
-                    <li>&#x79CD;&#x7C7B;&#x5E76;&#x67E5;&#x96C6;</li>
-                    <li>&#x6811;&#x72B6;&#x6570;&#x7EC4;</li>
-                    <li>&#x7EBF;&#x6BB5;&#x6811;</li>
-                    <li>BST</li>
-                    <li>splay&#x6811;</li>
-                    <li>&#x5206;&#x5757;</li>
-                    <li>&#x5B57;&#x5178;&#x6811;</li>
-                  </ul>
-                </li>
-                <li>&#x52A8;&#x6001;&#x89C4;&#x5212;
-                  <ul>
-                    <li>DP入门</li>
-                    <li>&#x57FA;&#x7840;&#x6A21;&#x578B;</li>
-                    <li>&#x80CC;&#x5305;&#x6A21;&#x578B;</li>
-                    <li>&#x72B6;&#x6001;&#x673A;DP</li>
-                    <li>&#x533A;&#x95F4;DP</li>
-                    <li>&#x6570;&#x4F4D;DP</li>
-                    <li>&#x8BB0;&#x5FC6;&#x5316;&#x641C;&#x7D22;</li>
-                    <li>DP&#x4F18;&#x5316;</li>
-                  </ul>
-                </li>
-                <li>&#x641C;&#x7D22;&#x7B97;&#x6CD5;
-                  <ul>
-                    <li>DFS</li>
-                    <li>BFS</li>
-                    <li>&#x53CC;&#x5411;&#x641C;&#x7D22;</li>
-                    <li>A*</li>
-                    <li>&#x542F;&#x53D1;&#x5F0F;&#x641C;&#x7D22;</li>
-                    <li>莫里斯</li>
-                  </ul>
-                </li>
+        <div id="offcanvas-usage2" uk-offcanvas="flip: true">
+                <div class="uk-offcanvas-bar">
+            
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+            
+                    <h3>更新</h3>
+                    <a href="https://github.com/open17/contest" style="text-decoration: none">
+                        <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>
+                        github项目地址
+                    </a>
+                    <h4>V1.0</h4>
+                    <ul>
+                        <li>加入全新ui</li>
+                        <li>优化体验</li>
+                        <li>加入新版界面</li>
+                        <li>旧版界面持续维护</li>
+                        <li>搜索功能内测中，暂未开放</li>
+                        <li>已加入MIT协议</li>
+                            
+                    </ul>
+                </div>
+            </div>
+            
+        <div id="modal-overflow" uk-modal>
+    <div class="uk-modal-dialog">
 
-                <li>&#x56FE;&#x8BBA;&#x7B97;&#x6CD5;
-                  <ul>
-                    <li>&#x5B58;&#x50A8;&#x4E0E;&#x641C;&#x7D22;</li>
-                    <li>&#x5E76;&#x67E5;&#x96C6;</li>
-                    <li>&#x6700;&#x77ED;&#x8DEF;</li>
-                    <li>&#x6700;&#x5C0F;&#x751F;&#x6210;&#x6811;</li>
-                    <li>&#x62D3;&#x6251;&#x6392;&#x5E8F;</li>
-                    <li>&#x4E8C;&#x5206;&#x56FE;</li>
-                    <li>&#x5308;&#x7259;&#x5229;&#x7B97;&#x6CD5;</li>
-                  </ul>
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <div class="uk-modal-header">
+            <h2 class="uk-modal-title">MIT License</h2>
+        </div>
+
+        <div class="uk-modal-body" uk-overflow-auto>
+
+            <p>Copyright (c) 2023 open17</p>
+            <p>Permission is hereby granted, free of charge, to any person obtaining a copy
+                of this software and associated documentation files (the "Software"), to deal
+                in the Software without restriction, including without limitation the rights
+                to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                copies of the Software, and to permit persons to whom the Software is
+                furnished to do so, subject to the following conditions:</p>
+            <p>
+                The above copyright notice and this permission notice shall be included in all
+                copies or substantial portions of the Software.
+            </p>
+            <p>
+                THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+            </p>
+        </div>
+
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-primary uk-modal-close" type="button">同意</button>
+        </div>
+
+    </div>
+</div>
+
+        <nav class="uk-navbar-container">
+            <div class="uk-container">
+                <div uk-navbar>
+        
+                    <div class="uk-navbar-left">
+        
+                        <a class="uk-navbar-item uk-logo" href="#" aria-label="Back to Home">Competitive Programming</a>
+        
+                        <ul class="uk-navbar-nav">
+                            <li>
+                                <a href="#modal-overflow" uk-toggle>
+                                    <span class="uk-icon uk-margin-small-right" uk-icon="icon: link"></span>
+                                    MIT协议
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="uk-navbar-nav">
+                            <li>
+                                
+                                <a href="./new.html">
+                                    开启新版全新体验
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="uk-navbar-nav">
+                            <li>
+                                
+                                <a href="#offcanvas-usage1" uk-toggle>
+                                    网站指南
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="uk-navbar-nav">
+                            <li>
+                               
+                                <a href="#offcanvas-usage2" uk-toggle>
+                                    更新日志
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="uk-navbar-nav">
+                            <li>
+                               
+                                <a href="./oldindex.html" uk-toggle>
+                                    旧版入口
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="uk-navbar-item">
+                            <div class="uk-margin">
+                                <form class="uk-search uk-search-default">
+                                    <a href="" uk-search-icon></a>
+                                    <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search">
+                                </form>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                </div>
+            </div>
+        </nav>
+        <div class="uk-alert-primary " uk-alert>
+            <a class="uk-alert-close uk-background-muted" uk-close></a>
+            <h3>温馨提示</h3>
+            <p>本页面为新版页面，内测中......部分内容并未完善，详情请见更新日志</p>
+            </div>
+        <div class="uk-section uk-section-muted">
+                <div class="uk-container">
+        
+                    <h3>我们的特点</h3>
+        
+                    <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+                        <div>
+                            <p>更多语言：包含c,c++,python,java等语言</p>
+                        </div>
+                        <div>
+                            <p>模板速查：汇总各语言算法比赛常用api,语法糖以及数据结构和算法模板</p>
+                        </div>
+                        <div>
+                            <p>笔记汇总：线性代数笔记，C语言基础文档等</p>
+                        </div>
+                    </div>
+        
+                </div>
+        </div>
+        <div class="uk-section uk-section-secondary uk-light">
+            <div class="uk-container">
+        
+                <h3>新版预览</h3>
+        
+                <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+                    <div>
+                        <p>全新的UI界面，设计以“简洁”为原则,让页面信息传达更有穿透力,并强调用户视角的功能呈现</p>
+                    </div>
+                    <div>
+                        <p>更合理的语言切换功能，更快的连接速度，保证更好的用户体验</p>
+                    </div>
+                    <div>
+                        <p>讨论区，搜索等全新功能即将上线，优化您的使用感受</p>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        <div class="uk-section-muted  uk-section">
+                <div class="uk-container">
+        
+                    <h3>Our Feature</h3>
+        
+                    <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+                        <div>
+                            <p>More languages: including languages such as C, C++, Python, Java, etc</p>
+                        </div>
+                        <div>
+                            <p>Template quick check: summarize the common apis, syntactic sugar, data structures and algorithm templates used in the algorithm competitions of various languages</p>
+                        </div>
+                        <div>
+                            <p>Summary of notes: notes on linear algebra, basic documents of C language, etc</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        
+        <div class="uk-section uk-section-default">
+            <div class="uk-container">
+        
+                <h3>New version preview</h3>
+        
+                <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+                    <div>
+                        <p>A brand new UI interface, designed with the principle of "simplicity", making page information more penetrating and emphasizing the functional presentation from the user's perspective</p>
+                    </div>
+                    <div>
+                        <p>More reasonable language switching function, faster connection speed, ensuring a better user experience</p>
+                    </div>
+                    <div>
+                        <p>New features such as discussion areas and search are about to be launched, optimizing your user experience</p>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"  uk-slideshow="min-height: 300; max-height: 600">
+
+            <ul class="uk-slideshow-items">
+                <li>
+                    <img src="images/bg1.jpg" alt="" uk-cover>
                 </li>
-              </ul>
-        </div>
-        <div class="main" id="mm">
-        </div>
-        <div class="right">
-            <h1>目录</h1>
-            <ul>
-                <li>&#x57FA;&#x7840;&#x7B97;&#x6CD5;
-                    <ul>
-                      <li>DFS</li>
-                      <li>BFS</li>
-                      <li>中心扩散</li>
-                      <li>二分查找</li>
-                      <li>倍增</li>
-                      <li>&#x53CC;&#x6307;&#x9488;</li>
-                      <li>&#x524D;&#x7F00;&#x548C;&#x4E0E;&#x5DEE;&#x5206;</li>
-                      <li>&#x6ED1;&#x52A8;&#x7A97;&#x53E3;</li>
-                      <li>&#x5355;&#x8C03;&#x6808;</li>
-                      <li>&#x5355;&#x8C03;&#x961F;&#x5217;</li>
-                      <li>&#x5FEB;&#x901F;&#x5E42;</li>
-                      <li>&#x79BB;&#x6563;&#x5316;</li>
-                      <li>&#x5FEB;&#x901F;&#x9009;&#x62E9;</li>
-                      <li>CDQ&#x5206;&#x6CBB;</li>
-                      <li>ST&#x7B97;&#x6CD5;</li>
-                    </ul>
-                  </li>
-                  <li>&#x6570;&#x5B66;&#x7406;&#x8BBA;
-                    <ul>
-                      <li>线性代数Ⅰ</li>
-                      <li>线性代数Ⅱ</li>
-                      <li>线性代数Ⅲ</li>
-                      <li>线性代数Ⅳ</li>
-                      <li>&#x6570;&#x8BBA;&#x5408;&#x96C6;</li>
-                      <li>&#x8BA1;&#x7B97;&#x51E0;&#x4F55;</li>
-                      <li>&#x7EC4;&#x5408;&#x6570;&#x5B66;</li>
-                    </ul>
-                  </li>
-                  <li>&#x7279;&#x6B8A;&#x9898;&#x578B;
-                    <ul>
-                      <li>Nim&#x6E38;&#x620F;</li>
-                      <li>2-set</li>
-                      <li>n&#x7EF4;&#x504F;&#x5E8F;</li>
-                      <li>&#x6469;&#x5C14;&#x6295;&#x7968;</li>
-                      <li>&#x8C03;&#x5EA6;&#x573A;&#x7B97;&#x6CD5;</li>
-                      <li>&#x533A;&#x95F4;&#x5408;&#x5E76;</li>
-                      <li>RMQ&#x95EE;&#x9898;</li>
-                    </ul>
-                  </li>
-                  <li>&#x7F51;&#x7EDC;&#x6D41;</li>
-                  <li>&#x8D2A;&#x5FC3;
-                    <ul>
-                      <li>&#x5E38;&#x89C1;&#x8BC1;&#x660E;</li>
-                    </ul>
-                  </li>
-                  <li>总结与复盘
-                    <ul>
-                      <li>leetcode周赛总结</li>
-                      <li>python算法小结</li>
-                      <li>cf构造题合集</li>
-                    </ul>
-                  </li>
-                  <li>字符串算法
-                    <ul>
-                      <li>KMP</li>
-                      <li>BF</li>
-                      <li>字典树</li>
-                      <li>后缀自动机</li>
-                      <li>前缀自动机</li>
-                      <li>自动AC机</li>
-                      <li>马拉车</li>
-                    </ul>
-                  </li>
+                <li>
+                    <img src="images/bg2.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                    <img src="images/bg3.jpg" alt="" uk-cover>
+                </li>
             </ul>
+        
+            <a class="uk-position-center-left uk-position-large uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-large uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+        
         </div>
-      <script>
-      //空即是c++
-      let language="";
-      //默认页面：compass
-      let x="compass";
-      //目标元素
-      let a= document.getElementById("mm");
-      //如果在out内则不切换语言
-      const out = new Set(["compass","LAChapter1","LAChapter2","LAChapter3","LAChapter4"]);
-      //更新页面函数
-      function refresh() {
-        var lans="";
-        if (!out.has(x)) {
-            lans=language;
-        } 
-        a.innerHTML = " <iframe src=\"./" + x +lans+ ".html\" frameborder=\"0\" width=\"100%\" height=\"100%\" ></iframe>";
-      }
-      //初始化页面
-      refresh();
-
-      //监听壁纸变化
-      var s=document.getElementById("theme");
-      s.onchange=function(){
-          var b =s.selectedIndex;
-          if (b==0) {
-            document.body.style["background-color"]="gray";
-            document.getElementsByClassName("header")[0].style.color="azure";
-            document.getElementsByClassName("left")[0].style["background-color"] ="white";
-            document.getElementsByClassName("right")[0].style["background-color"]="white";
-          }
-          else if (b==1) {
-            document.body.style["background-color"]="rgb(255 230 230)";
-            document.getElementsByClassName("left")[0].style["background-color"] ="rgb(255 230 230)";
-            document.getElementsByClassName("right")[0].style["background-color"]="rgb(255 230 230)";
-            document.getElementsByClassName("header")[0].style.color="#9dc3e2";
-          }
-      }
-
-      //语言变化
-      function changeLan(that) {
-        language=that.value;
-        refresh();
-      }
-      //对应网址
-      var h = { 
-        "并查集": "Buf", 
-      "数论合集": "Math", 
-      "快速入门": "Basic" ,
-      "DP入门":"Dprumen",
-      "树状数组":"FenwickTree",
-      "区间合并":"Qujianhebing",
-      "摩尔投票":"Moertoupiao",
-      "快速选择":"Qselect",
-      "二分查找":"BinarySearch",
-      "线性代数Ⅰ":"LAChapter1",
-      "线性代数Ⅱ":"LAChapter2",
-      "线性代数Ⅲ":"LAChapter3",
-      "线性代数Ⅳ":"LAChapter4",
-      "常用语法糖":"Candy",
-      "最小生成树":"MST",
-      "拓扑排序":"TopologicalSorting",
-      "网站使用指南":"compass"
-      }
-      //监听li点击
-      var li = document.getElementsByTagName("li");
-      for (let i = 0; i < li.length; i++) {
-        li[i].onclick = function () {
-          //停止冒泡
-          event.stopPropagation();
-          x = h[this.innerHTML];
-          if (x != undefined) {
-            refresh();
-          }
-        }
-      }
-      </script>
+        <h1>推荐文章</h1>
+<div uk-filter="target: .js-filter" class="uk-background-muted">
+    
+    <ul class="uk-subnav uk-subnav-pill">
+        <li class="uk-active" uk-filter-control><a href="#">All</a></li>
+        <li uk-filter-control="[data-color='white']"><a href="#">数学</a></li>
+        <li uk-filter-control="[data-color='blue']"><a href="#">算法</a></li>
+        <li uk-filter-control="[data-color='black']"><a href="#">数据结构</a></li>
+         <li uk-filter-control="[data-color='red']"><a href="#">其它</a></li>
+    </ul>
+    <div class="article">
+        <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid>
+            <li data-color="red">
+                <div class="uk-card  uk-card-large uk-card-default uk-card-body">周赛题解合集</div>
+            </li>
+            <li data-color="white">
+                <div class="uk-card  uk-card-large uk-card-default uk-card-body">线性代数I</div>
+            </li>
+            <li data-color="blue">
+                <div class="uk-card uk-card-large  uk-card-primary uk-card-body">Kahn拓扑排序</div>
+            </li>
+            <li data-color="white">
+                <div class="uk-card  uk-card-large uk-card-default uk-card-body">线性代数II</div>
+            </li>
+            <li data-color="white">
+                <div class="uk-card  uk-card-large uk-card-default uk-card-body">线性代数III</div>
+            </li>
+            <li data-color="black">
+                <div class="uk-card  uk-card-large uk-card-secondary uk-card-body">扩展域并查集</div>
+            </li>
+            <li data-color="black">
+                <div class="uk-card uk-card-large  uk-card-secondary uk-card-body">zkw线段树</div>
+            </li>
+            <li data-color="blue">
+                <div class="uk-card  uk-card-large uk-card-primary uk-card-body">最小生成树</div>
+            </li>
+            <li data-color="black">
+                <div class="uk-card uk-card-large  uk-card-secondary uk-card-body">分块</div>
+            </li>
+            <li data-color="blue">
+                <div class="uk-card  uk-card-large uk-card-primary uk-card-body">区间DP</div>
+            </li>
+            <li data-color="white">
+                <div class="uk-card uk-card-large  uk-card-default uk-card-body">数论I</div>
+            </li>
+            <li data-color="blue">
+                <div class="uk-card  uk-card-large uk-card-primary uk-card-body">KMP算法</div>
+            </li>
+            <li data-color="black">
+                <div class="uk-card  uk-card-large uk-card-secondary uk-card-body">01字典树</div>
+            </li>
+        </ul>
+    </div>
+</div>
     </body>
 </html>

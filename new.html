@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="style2.css">
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+    <!-- 网站指南 -->
+    <div id="offcanvas-usage1" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <h3>网站指南</h3>
+
+            <ol>
+                <li>&#x5982;&#x679C;&#x70B9;&#x51FB;&#x76EE;&#x5F55;&#x6CA1;&#x6709;&#x53CD;&#x5E94;&#xFF0C;&#x8BC1;&#x660E;&#x8BE5;&#x90E8;&#x5206;&#x6682;&#x672A;&#x66F4;&#x65B0;
+                </li>
+                <li>&#x5982;&#x679C;&#x70B9;&#x51FB;&#x540E;&#x663E;&#x793A;404&#xFF0C;&#x5219;&#x8868;&#x660E;&#x8BE5;&#x90E8;&#x5206;&#x5B58;&#x5728;&#x5185;&#x5BB9;&#xFF0C;&#x4F46;&#x6CA1;&#x6709;&#x8BE5;&#x8BED;&#x8A00;&#x7248;&#x672C;
+                </li>
+                <li>&#x5982;&#x679C;&#x60F3;&#x8981;&#x67E5;&#x770B;404&#x5185;&#x5BB9;&#xFF0C;&#x8BF7;&#x5207;&#x6362;&#x8BED;&#x8A00;&#x7248;&#x672C;
+                </li>
+                <li>&#x76EE;&#x524D;c++&#x548C;py&#x5185;&#x5BB9;&#x4E3A;&#x4E3B;</li>
+            </ol>
+        </div>
+    </div>
+    <!-- 更新日志 -->
+    <div id="offcanvas-usage2" uk-offcanvas="flip: true">
+        <div class="uk-offcanvas-bar">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <h3>更新</h3>
+            <a href="https://github.com/open17/contest" style="text-decoration: none">
+                <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>
+                github项目地址
+            </a>
+            <h4>V1.0</h4>
+            <ul>
+                <li>加入全新ui</li>
+                <li>优化体验</li>
+                <li>加入新版界面</li>
+                <li>旧版界面持续维护</li>
+                <li>搜索功能内测中，暂未开放</li>
+                <li>已加入MIT协议</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- MIT协议 -->
+    <div id="modal-overflow" uk-modal>
+        <div class="uk-modal-dialog">
+
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">MIT License</h2>
+            </div>
+
+            <div class="uk-modal-body" uk-overflow-auto>
+
+                <p>Copyright (c) 2023 open17</p>
+                <p>Permission is hereby granted, free of charge, to any person obtaining a copy
+                    of this software and associated documentation files (the "Software"), to deal
+                    in the Software without restriction, including without limitation the rights
+                    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                    copies of the Software, and to permit persons to whom the Software is
+                    furnished to do so, subject to the following conditions:</p>
+                <p>
+                    The above copyright notice and this permission notice shall be included in all
+                    copies or substantial portions of the Software.
+                </p>
+                <p>
+                    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+                    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+                    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+                    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+                    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+                    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+                    SOFTWARE.
+
+                </p>
+            </div>
+
+            <div class="uk-modal-footer uk-text-right">
+                <button class="uk-button uk-button-primary uk-modal-close" type="button">同意</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- 导航栏 -->
+    <div class="header">
+        <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div uk-navbar>
+
+                <div class="uk-navbar-left">
+
+                    <a class="uk-navbar-item uk-logo" href="./index.html" aria-label="Back to Home">Competitive
+                        Programming</a>
+
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <a href="#modal-overflow" uk-toggle>
+                                <span class="uk-icon uk-margin-small-right" uk-icon="icon: link"></span>
+                                MIT协议
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="uk-navbar-nav">
+                        <li>
+
+                            <a href="./new.html">
+                                开启新版全新体验
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="uk-navbar-nav">
+                        <li>
+
+                            <a href="#offcanvas-usage1" uk-toggle>
+                                网站指南
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="uk-navbar-nav">
+                        <li>
+
+                            <a href="#offcanvas-usage2" uk-toggle>
+                                更新日志
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="uk-navbar-nav">
+                        <li>
+
+                            <a href="./oldindex.html" uk-toggle>
+                                旧版入口
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="uk-navbar-item">
+                        <div class="uk-margin">
+                            <form class="uk-search uk-search-default">
+                                <a href="" uk-search-icon></a>
+                                <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+        
+    </nav>
+    </div>
+    <!-- 目录 -->
+    <div class="left">
+        <h2>目录</h2>
+            <ul class="uk-nav-primary " uk-nav="multiple: true">
+                <li class="uk-active"></li>
+                <li class="uk-parent">
+                    <a href="#">语言基础 <span uk-nav-parent-icon></span></a>
+                    <ul class="uk-nav-sub">
+                        <li>&#x5FEB;&#x901F;&#x5165;&#x95E8;</li>
+                        <li>&#x57FA;&#x7840;&#x6570;&#x636E;&#x7ED3;&#x6784;</li>
+                        <li>&#x5E38;&#x7528;&#x8BED;&#x6CD5;&#x7CD6;</li>
+                    </ul>
+                </li>
+                <li class="uk-parent">
+                    <a href="#">数据结构 <span uk-nav-parent-icon></span></a>
+                    <ul class="uk-nav-sub">
+                        <li>&#x5E76;&#x67E5;&#x96C6;</li>
+                    <li>&#x79CD;&#x7C7B;&#x5E76;&#x67E5;&#x96C6;</li>
+                    <li>&#x6811;&#x72B6;&#x6570;&#x7EC4;</li>
+                    <li>&#x7EBF;&#x6BB5;&#x6811;</li>
+                    <li>BST</li>
+                    <li>splay&#x6811;</li>
+                    <li>&#x5206;&#x5757;</li>
+                    <li>&#x5B57;&#x5178;&#x6811;</li>
+                    </ul>
+                </li>
+                <li class="uk-parent">
+                    <a href="#">动态规划 <span uk-nav-parent-icon></span></a>
+                    <ul class="uk-nav-sub">
+                        <li>DP入门</li>
+                    <li>&#x57FA;&#x7840;&#x6A21;&#x578B;</li>
+                    <li>&#x80CC;&#x5305;&#x6A21;&#x578B;</li>
+                    <li>&#x72B6;&#x6001;&#x673A;DP</li>
+                    <li>&#x533A;&#x95F4;DP</li>
+                    <li>&#x6570;&#x4F4D;DP</li>
+                    <li>&#x8BB0;&#x5FC6;&#x5316;&#x641C;&#x7D22;</li>
+                    <li>DP&#x4F18;&#x5316;</li>
+                    </ul>
+                </li><li class="uk-parent">
+                    <a href="#">贪心 <span uk-nav-parent-icon></span></a>
+                    <ul class="uk-nav-sub">
+                        <li>贪心</li>
+                    </ul>
+                </li><li class="uk-parent">
+                    <a href="#">搜索算法 <span uk-nav-parent-icon></span></a>
+                    <ul class="uk-nav-sub">
+                        <li>&#x5B58;&#x50A8;&#x4E0E;&#x641C;&#x7D22;</li>
+                    <li>&#x5E76;&#x67E5;&#x96C6;</li>
+                    <li>&#x6700;&#x77ED;&#x8DEF;</li>
+                    <li>&#x6700;&#x5C0F;&#x751F;&#x6210;&#x6811;</li>
+                    <li>&#x62D3;&#x6251;&#x6392;&#x5E8F;</li>
+                    <li>&#x4E8C;&#x5206;&#x56FE;</li>
+                    <li>&#x5308;&#x7259;&#x5229;&#x7B97;&#x6CD5;</li>
+                    </ul>
+                </li><li class="uk-parent">
+                    <a href="#">图论算法 <span uk-nav-parent-icon></span></a>
+                    <ul class="uk-nav-sub">
+                        <li>&#x5B58;&#x50A8;&#x4E0E;&#x641C;&#x7D22;</li>
+                    <li>&#x5E76;&#x67E5;&#x96C6;</li>
+                    <li>&#x6700;&#x77ED;&#x8DEF;</li>
+                    <li>&#x6700;&#x5C0F;&#x751F;&#x6210;&#x6811;</li>
+                    <li>&#x62D3;&#x6251;&#x6392;&#x5E8F;</li>
+                    <li>&#x4E8C;&#x5206;&#x56FE;</li>
+                    <li>&#x5308;&#x7259;&#x5229;&#x7B97;&#x6CD5;</li>
+                    </ul>
+                </li>
+                <li class="uk-parent">
+                    <a href="#">基础算法<span uk-nav-parent-icon></span></a>
+                    <ul class="uk-nav-sub">
+                        <li>DFS</li>
+                      <li>BFS</li>
+                      <li>中心扩散</li>
+                      <li>二分查找</li>
+                      <li>倍增</li>
+                      <li>&#x53CC;&#x6307;&#x9488;</li>
+                      <li>&#x524D;&#x7F00;&#x548C;&#x4E0E;&#x5DEE;&#x5206;</li>
+                      <li>&#x6ED1;&#x52A8;&#x7A97;&#x53E3;</li>
+                      <li>&#x5355;&#x8C03;&#x6808;</li>
+                      <li>&#x5355;&#x8C03;&#x961F;&#x5217;</li>
+                      <li>&#x5FEB;&#x901F;&#x5E42;</li>
+                      <li>&#x79BB;&#x6563;&#x5316;</li>
+                      <li>&#x5FEB;&#x901F;&#x9009;&#x62E9;</li>
+                      <li>CDQ&#x5206;&#x6CBB;</li>
+                      <li>ST&#x7B97;&#x6CD5;</li>
+                    </ul>
+                </li><li class="uk-parent">
+                    <a href="#">网络流 <span uk-nav-parent-icon></span></a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="#">Sub item</a></li>
+                        <li><a href="#">Sub item</a></li>
+                    </ul>
+                </li><li class="uk-parent">
+                    <a href="#">数学理论 <span uk-nav-parent-icon></span></a>
+                    <ul class="uk-nav-sub">
+                        <li>线性代数Ⅰ</li>
+                        <li>线性代数Ⅱ</li>
+                        <li>线性代数Ⅲ</li>
+                        <li>线性代数Ⅳ</li>
+                        <li>&#x6570;&#x8BBA;&#x5408;&#x96C6;</li>
+                        <li>&#x8BA1;&#x7B97;&#x51E0;&#x4F55;</li>
+                        <li>&#x7EC4;&#x5408;&#x6570;&#x5B66;</li>
+                    </ul>
+                </li><li class="uk-parent">
+                    <a href="#">字符串算法 <span uk-nav-parent-icon></span></a>
+                    <ul class="uk-nav-sub">
+                        <li>KMP</li>
+                      <li>BF</li>
+                      <li>字典树</li>
+                      <li>后缀自动机</li>
+                      <li>前缀自动机</li>
+                      <li>自动AC机</li>
+                      <li>马拉车</li>
+                    </ul>
+                </li><li class="uk-parent">
+                    <a href="#">特殊题型 <span uk-nav-parent-icon></span></a>
+                    <ul class="uk-nav-sub">
+                        <li>Nim&#x6E38;&#x620F;</li>
+                        <li>2-set</li>
+                        <li>n&#x7EF4;&#x504F;&#x5E8F;</li>
+                        <li>&#x6469;&#x5C14;&#x6295;&#x7968;</li>
+                        <li>&#x8C03;&#x5EA6;&#x573A;&#x7B97;&#x6CD5;</li>
+                        <li>&#x533A;&#x95F4;&#x5408;&#x5E76;</li>
+                        <li>RMQ&#x95EE;&#x9898;</li>
+                    </ul>
+                </li>
+            </li><li class="uk-parent">
+                <a href="#">日常笔记 <span uk-nav-parent-icon></span></a>
+                <ul class="uk-nav-sub">
+                    <li>leetcode周赛总结</li>
+                    <li>python算法小结</li>
+                    <li>cf构造题合集</li>
+                </ul>
+            </li>
+            </ul>
+    </div>
+    <!-- 主体 -->
+    <div class="main" id="mm">
+    </div>
+    <!-- 评论区 -->
+    <div class="right">
+        <button class="uk-button uk-button-default" type="button">语言选择</button>
+                <div uk-dropdown>
+                    <ul class="uk-nav uk-dropdown-nav">
+                        <li><a href="#">C++</a></li>
+                        <li><a href="#">python</a></li>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">C</a></li>
+                        <li><a href="#">go</a></li>
+                    </ul>
+                </div>
+        <h3>讨论区</h3>
+        <ul class="uk-comment-list">
+            <li>
+                <article class="uk-comment uk-visible-toggle" tabindex="-1" role="comment">
+                    <header class="uk-comment-header uk-position-relative">
+                        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <img class="uk-comment-avatar" src="images/avatar.jpg" width="80" height="80" alt="">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">作者</a></h4>
+                                <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="#">3天以前</a></p>
+                            </div>
+                        </div>
+                        <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="#">回复</a></div>
+                    </header>
+                    <div class="uk-comment-body">
+                        <p>你说得对，但是乌拉圭的人口有345.7万，同时，仅澳大利亚就有4700万只袋鼠。如果袋鼠决定入侵乌拉圭，那么每一个乌拉圭人要打14只袋鼠，你不知道，你不在乎，你只关心你自己</p>
+                    </div>
+                </article>
+                <ul>
+                    <li>
+                        <article class="uk-comment uk-comment-primary uk-visible-toggle" tabindex="-1" role="comment">
+                            <header class="uk-comment-header uk-position-relative">
+                                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <img class="uk-comment-avatar" src="images/nothing.jpg" width="80" height="80" alt="">
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">袋鼠</a></h4>
+                                        <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="#">1天以前</a></p>
+                                    </div>
+                                </div>
+                                <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="#">回复</a></div>
+                            </header>
+                            <div class="uk-comment-body">
+                                <p>你说得对，但是中国的人口有14亿，同时，仅澳大利亚就有4700万只袋鼠。如果袋鼠决定入侵中国，那么每一个袋鼠要打30个中国人，你不知道，你不在乎，你只关心乌拉圭
+                                    </p>
+                            </div>
+
+                        </article>
+                    </li>
+                    <li>
+                    <li>
+                        <article class="uk-comment  uk-comment-primary  uk-visible-toggle" tabindex="-1" role="comment">
+                            <header class="uk-comment-header uk-position-relative">
+                                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <img class="uk-comment-avatar" src="images/y.jpg" width="80" height="80" alt="">
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Y神</a></h4>
+                                        <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="#">3小时前</a></p>
+                                    </div>
+                                </div>
+                                <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="#">回复</a></div>
+                            </header>
+                            <div class="uk-comment-body">
+                                <p>你说得很对</p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script>
+        //空即是c++
+        let language="";
+        //默认页面：compass
+        let x="compass";
+        //目标元素
+        let a= document.getElementById("mm");
+        //如果在out内则不切换语言
+        const out = new Set(["compass","LAChapter1","LAChapter2","LAChapter3","LAChapter4"]);
+        //更新页面函数
+        function refresh() {
+          var lans="";
+          if (!out.has(x)) {
+              lans=language;
+          } 
+          a.innerHTML = " <iframe src=\"./" + x +lans+ ".html\" frameborder=\"0\" width=\"100%\" height=\"100%\" ></iframe>";
+        }
+        //初始化页面
+        refresh();
+        //语言变化
+        function changeLan(that) {
+          language=that.value;
+          refresh();
+        }
+        //对应网址
+        var h = { 
+          "并查集": "Buf", 
+        "数论合集": "Math", 
+        "快速入门": "Basic" ,
+        "DP入门":"Dprumen",
+        "树状数组":"FenwickTree",
+        "区间合并":"Qujianhebing",
+        "摩尔投票":"Moertoupiao",
+        "快速选择":"Qselect",
+        "二分查找":"BinarySearch",
+        "线性代数Ⅰ":"LAChapter1",
+        "线性代数Ⅱ":"LAChapter2",
+        "线性代数Ⅲ":"LAChapter3",
+        "线性代数Ⅳ":"LAChapter4",
+        "常用语法糖":"Candy",
+        "最小生成树":"MST",
+        "拓扑排序":"TopologicalSorting",
+        "网站使用指南":"compass"
+        }
+        var ll={
+            "<a href=\"#\">C++</a>":"",
+            "<a href=\"#\">python</a>":"py",
+            "<a href=\"#\">C</a>":"c",
+            "<a href=\"#\">Java</a>":"java",
+            "<a href=\"#\">go</a>":"go"
+        }
+        //监听li点击
+        var li = document.getElementsByTagName("li");
+        for (let i = 0; i < li.length; i++) {
+          li[i].onclick = function () {
+            //停止冒泡
+            //event.stopPropagation();
+            var k = h[this.innerHTML];
+            var j=ll[this.innerHTML];
+            if (j != undefined) {
+                language=j;
+              refresh();
+            }
+            if (k != undefined) {
+                x=k;
+              refresh();
+            }
+          }
+        }
+        </script>
+</body>
+
+</html>

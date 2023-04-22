@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>contest</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header">
+          <h1>CP:Algorithm and Data Structure</h1>
+          <!-- <button onclick="change()">refresh</button> -->
+          <select name="lan" id="lan" onchange="changeLan(this)">
+            <option value="">c++</option>
+            <option value="py">python</option>
+            <option value="java">java</option>
+            <option value="go">go</option>
+            <option value="C">c</option>
+          </select>
+          <select name="theme" id="theme" >
+            <option>太空白</option>
+            <option>樱花粉</option>
+            <option>数码空间</option>
+            <option>冰川蓝</option>
+          </select>
+        </div>
+        <div class="left">
+            <h1>目录</h1>
+            <ul>
+              <li> 前言
+                <ul>
+                  <li>网站使用指南</li>
+                  <li>其他</li>
+                </ul>
+              </li>
+                <li>&#x8BED;&#x8A00;&#x57FA;&#x7840;
+                  <ul>
+                    <li>&#x5FEB;&#x901F;&#x5165;&#x95E8;</li>
+                    <li>&#x57FA;&#x7840;&#x6570;&#x636E;&#x7ED3;&#x6784;</li>
+                    <li>&#x5E38;&#x7528;&#x8BED;&#x6CD5;&#x7CD6;</li>
+                  </ul>
+                </li>
+                <li>&#x6570;&#x636E;&#x7ED3;&#x6784;
+                  <ul>
+                    <li>&#x5E76;&#x67E5;&#x96C6;</li>
+                    <li>&#x79CD;&#x7C7B;&#x5E76;&#x67E5;&#x96C6;</li>
+                    <li>&#x6811;&#x72B6;&#x6570;&#x7EC4;</li>
+                    <li>&#x7EBF;&#x6BB5;&#x6811;</li>
+                    <li>BST</li>
+                    <li>splay&#x6811;</li>
+                    <li>&#x5206;&#x5757;</li>
+                    <li>&#x5B57;&#x5178;&#x6811;</li>
+                  </ul>
+                </li>
+                <li>&#x52A8;&#x6001;&#x89C4;&#x5212;
+                  <ul>
+                    <li>DP入门</li>
+                    <li>&#x57FA;&#x7840;&#x6A21;&#x578B;</li>
+                    <li>&#x80CC;&#x5305;&#x6A21;&#x578B;</li>
+                    <li>&#x72B6;&#x6001;&#x673A;DP</li>
+                    <li>&#x533A;&#x95F4;DP</li>
+                    <li>&#x6570;&#x4F4D;DP</li>
+                    <li>&#x8BB0;&#x5FC6;&#x5316;&#x641C;&#x7D22;</li>
+                    <li>DP&#x4F18;&#x5316;</li>
+                  </ul>
+                </li>
+                <li>&#x641C;&#x7D22;&#x7B97;&#x6CD5;
+                  <ul>
+                    <li>DFS</li>
+                    <li>BFS</li>
+                    <li>&#x53CC;&#x5411;&#x641C;&#x7D22;</li>
+                    <li>A*</li>
+                    <li>&#x542F;&#x53D1;&#x5F0F;&#x641C;&#x7D22;</li>
+                    <li>莫里斯</li>
+                  </ul>
+                </li>
+
+                <li>&#x56FE;&#x8BBA;&#x7B97;&#x6CD5;
+                  <ul>
+                    <li>&#x5B58;&#x50A8;&#x4E0E;&#x641C;&#x7D22;</li>
+                    <li>&#x5E76;&#x67E5;&#x96C6;</li>
+                    <li>&#x6700;&#x77ED;&#x8DEF;</li>
+                    <li>&#x6700;&#x5C0F;&#x751F;&#x6210;&#x6811;</li>
+                    <li>&#x62D3;&#x6251;&#x6392;&#x5E8F;</li>
+                    <li>&#x4E8C;&#x5206;&#x56FE;</li>
+                    <li>&#x5308;&#x7259;&#x5229;&#x7B97;&#x6CD5;</li>
+                  </ul>
+                </li>
+              </ul>
+        </div>
+        <div class="main" id="mm">
+        </div>
+        <div class="right">
+            <h1>目录</h1>
+            <ul>
+                <li>&#x57FA;&#x7840;&#x7B97;&#x6CD5;
+                    <ul>
+                      <li>DFS</li>
+                      <li>BFS</li>
+                      <li>中心扩散</li>
+                      <li>二分查找</li>
+                      <li>倍增</li>
+                      <li>&#x53CC;&#x6307;&#x9488;</li>
+                      <li>&#x524D;&#x7F00;&#x548C;&#x4E0E;&#x5DEE;&#x5206;</li>
+                      <li>&#x6ED1;&#x52A8;&#x7A97;&#x53E3;</li>
+                      <li>&#x5355;&#x8C03;&#x6808;</li>
+                      <li>&#x5355;&#x8C03;&#x961F;&#x5217;</li>
+                      <li>&#x5FEB;&#x901F;&#x5E42;</li>
+                      <li>&#x79BB;&#x6563;&#x5316;</li>
+                      <li>&#x5FEB;&#x901F;&#x9009;&#x62E9;</li>
+                      <li>CDQ&#x5206;&#x6CBB;</li>
+                      <li>ST&#x7B97;&#x6CD5;</li>
+                    </ul>
+                  </li>
+                  <li>&#x6570;&#x5B66;&#x7406;&#x8BBA;
+                    <ul>
+                      <li>线性代数Ⅰ</li>
+                      <li>线性代数Ⅱ</li>
+                      <li>线性代数Ⅲ</li>
+                      <li>线性代数Ⅳ</li>
+                      <li>&#x6570;&#x8BBA;&#x5408;&#x96C6;</li>
+                      <li>&#x8BA1;&#x7B97;&#x51E0;&#x4F55;</li>
+                      <li>&#x7EC4;&#x5408;&#x6570;&#x5B66;</li>
+                    </ul>
+                  </li>
+                  <li>&#x7279;&#x6B8A;&#x9898;&#x578B;
+                    <ul>
+                      <li>Nim&#x6E38;&#x620F;</li>
+                      <li>2-set</li>
+                      <li>n&#x7EF4;&#x504F;&#x5E8F;</li>
+                      <li>&#x6469;&#x5C14;&#x6295;&#x7968;</li>
+                      <li>&#x8C03;&#x5EA6;&#x573A;&#x7B97;&#x6CD5;</li>
+                      <li>&#x533A;&#x95F4;&#x5408;&#x5E76;</li>
+                      <li>RMQ&#x95EE;&#x9898;</li>
+                    </ul>
+                  </li>
+                  <li>&#x7F51;&#x7EDC;&#x6D41;</li>
+                  <li>&#x8D2A;&#x5FC3;
+                    <ul>
+                      <li>&#x5E38;&#x89C1;&#x8BC1;&#x660E;</li>
+                    </ul>
+                  </li>
+                  <li>总结与复盘
+                    <ul>
+                      <li>leetcode周赛总结</li>
+                      <li>python算法小结</li>
+                      <li>cf构造题合集</li>
+                    </ul>
+                  </li>
+                  <li>字符串算法
+                    <ul>
+                      <li>KMP</li>
+                      <li>BF</li>
+                      <li>字典树</li>
+                      <li>后缀自动机</li>
+                      <li>前缀自动机</li>
+                      <li>自动AC机</li>
+                      <li>马拉车</li>
+                    </ul>
+                  </li>
+            </ul>
+        </div>
+      <script>
+      //空即是c++
+      let language="";
+      //默认页面：compass
+      let x="compass";
+      //目标元素
+      let a= document.getElementById("mm");
+      //如果在out内则不切换语言
+      const out = new Set(["compass","LAChapter1","LAChapter2","LAChapter3","LAChapter4"]);
+      //更新页面函数
+      function refresh() {
+        var lans="";
+        if (!out.has(x)) {
+            lans=language;
+        } 
+        a.innerHTML = " <iframe src=\"./" + x +lans+ ".html\" frameborder=\"0\" width=\"100%\" height=\"100%\" ></iframe>";
+      }
+      //初始化页面
+      refresh();
+
+      //监听壁纸变化
+      var s=document.getElementById("theme");
+      s.onchange=function(){
+          var b =s.selectedIndex;
+          if (b==0) {
+            document.body.style["background-color"]="gray";
+            document.getElementsByClassName("header")[0].style.color="azure";
+            document.getElementsByClassName("left")[0].style["background-color"] ="white";
+            document.getElementsByClassName("right")[0].style["background-color"]="white";
+          }
+          else if (b==1) {
+            document.body.style["background-color"]="rgb(255 230 230)";
+            document.getElementsByClassName("left")[0].style["background-color"] ="rgb(255 230 230)";
+            document.getElementsByClassName("right")[0].style["background-color"]="rgb(255 230 230)";
+            document.getElementsByClassName("header")[0].style.color="#9dc3e2";
+          }
+      }
+
+      //语言变化
+      function changeLan(that) {
+        language=that.value;
+        refresh();
+      }
+      //对应网址
+      var h = { 
+        "并查集": "Buf", 
+      "数论合集": "Math", 
+      "快速入门": "Basic" ,
+      "DP入门":"Dprumen",
+      "树状数组":"FenwickTree",
+      "区间合并":"Qujianhebing",
+      "摩尔投票":"Moertoupiao",
+      "快速选择":"Qselect",
+      "二分查找":"BinarySearch",
+      "线性代数Ⅰ":"LAChapter1",
+      "线性代数Ⅱ":"LAChapter2",
+      "线性代数Ⅲ":"LAChapter3",
+      "线性代数Ⅳ":"LAChapter4",
+      "常用语法糖":"Candy",
+      "最小生成树":"MST",
+      "拓扑排序":"TopologicalSorting",
+      "网站使用指南":"compass"
+      }
+      //监听li点击
+      var li = document.getElementsByTagName("li");
+      for (let i = 0; i < li.length; i++) {
+        li[i].onclick = function () {
+          //停止冒泡
+          event.stopPropagation();
+          x = h[this.innerHTML];
+          if (x != undefined) {
+            refresh();
+          }
+        }
+      }
+      </script>
+    </body>
+</html>

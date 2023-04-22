@@ -1,0 +1,53 @@
+/* *{
+    text-align: center;
+    text-decoration: none;
+    list-style:none
+} */
+/* div{
+    overflow:auto;
+} */
+.header{
+    color: azure;
+    width:100vw;
+    height: 17vh;
+    overflow:auto;
+}
+.left{
+    overflow:auto;
+    position: absolute;
+    top:17vh;
+    left:2vw;
+    width:18vw;
+    height: 85vh;
+    background-color: rgb(255, 255, 255);
+}
+.main{
+    position: absolute;
+    top: 17vh;
+    left:22vw;
+    width: 54vw;
+    height: 85vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.right{
+    position: absolute;
+    top:15vh;
+    right:2vw;
+    width:22vw;
+    height:85vh;
+    background-color: rgb(255, 255, 255);
+}
+::-webkit-scrollbar { 
+    width: 1vh;    
+    height: 1vw;
+  }
+  ::-webkit-scrollbar-corner{
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background:  transparent;
+  }
+  ::-webkit-scrollbar-track {
+    background:  transparent;
+  }
