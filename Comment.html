@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+        <ul class="uk-comment-list">
+            <li>
+                <article class="uk-comment uk-visible-toggle" tabindex="-1" role="comment">
+                    <header class="uk-comment-header uk-position-relative">
+                        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <img class="uk-comment-avatar" src="images/avatar.jpg" width="80" height="80" alt="">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">作者</a></h4>
+                                <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="#">3天以前</a></p>
+                            </div>
+                        </div>
+                        <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="#" onclick="writed()">回复</a></div>
+                    </header>
+                    <div class="uk-comment-body">
+                        <p>你说得对，但是乌拉圭的人口有345.7万，同时，仅澳大利亚就有4700万只袋鼠。如果袋鼠决定入侵乌拉圭，那么每一个乌拉圭人要打14只袋鼠，你不知道，你不在乎，你只关心你自己</p>
+                    </div>
+                </article>
+                <ul>
+                    <li>
+                        <article class="uk-comment uk-comment-primary uk-visible-toggle" tabindex="-1" role="comment">
+                            <header class="uk-comment-header uk-position-relative">
+                                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <img class="uk-comment-avatar" src="images/nothing.jpg" width="80" height="80" alt="">
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">袋鼠</a></h4>
+                                        <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="#">1天以前</a></p>
+                                    </div>
+                                </div>
+                            </header>
+                            <div class="uk-comment-body">
+                                <p>你说得对，但是中国的人口有14亿，同时，仅澳大利亚就有4700万只袋鼠。如果袋鼠决定入侵中国，那么每一个袋鼠要打30个中国人，你不知道，你不在乎，你只关心乌拉圭
+                                    </p>
+                            </div>
+
+                        </article>
+                    </li>
+                    <div id="re">
+                    </div>
+                </ul>
+                
+            </li>
+        </ul>
+        <div uk-sticky >
+            <a  uk-icon="icon:comment; ratio: 2" onclick="writed()"></a>
+            <form class="uk-search uk-search-default ">
+                <input class="uk-search-input" type="search" placeholder="发一条友善的评论吧" id="w" style="width:100%">
+            </form>
+        </div>
+        <script>   
+    
+                var s="<li>    <article class=\"uk-comment  uk-comment-primary  uk-visible-toggle\" tabindex=\"-1\" role=\"comment\">        <header class=\"uk-comment-header uk-position-relative\">            <div class=\"uk-grid-medium uk-flex-middle\" uk-grid>                <div class=\"uk-width-auto\">                    <img class=\"uk-comment-avatar\" src=\"images/y.jpg\" width=\"80\" height=\"80\" alt=\"\">                </div>                <div class=\"uk-width-expand\">                    <h4 class=\"uk-comment-title uk-margin-remove\"><a class=\"uk-link-reset\" href=\"#\">Y</a></h4>                    <p class=\"uk-comment-meta uk-margin-remove-top\"><a class=\"uk-link-reset\" href=\"#\">1s前</a></p>                </div>            </div>        </header>        <div class=\"uk-comment-body\">            <p>"
+                var e="</p>        </div>    </article></li>";
+                function writed(params) {
+                    var w=document.getElementById("w").value;
+                    if(w==""){
+                        w="...";
+                    }
+                    document.getElementById("re").innerHTML+=s+w+e;
+                }
+        </script>
+    </body>
+</html>
+
+
+

@@ -42,15 +42,21 @@
                 <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>
                 github项目地址
             </a>
+            <h4>V1.1</h4>
+            <ul>
+                <li>优化讨论区显示</li>
+                <li>现在你可以发表你的评论啦（</li>
+                <li>改善布局自适应功能</li>
+            </ul>
+            <hr>
             <h4>V1.0</h4>
             <ul>
                 <li>加入全新ui</li>
                 <li>优化体验</li>
                 <li>加入新版界面</li>
-                <li>旧版界面持续维护</li>
+                <li>旧版界面随缘维护</li>
                 <li>搜索功能内测中，暂未开放</li>
                 <li>已加入MIT协议</li>
-
             </ul>
         </div>
     </div>
@@ -246,12 +252,13 @@
                       <li>&#x5FEB;&#x901F;&#x9009;&#x62E9;</li>
                       <li>CDQ&#x5206;&#x6CBB;</li>
                       <li>ST&#x7B97;&#x6CD5;</li>
+                      <li>扫描线</li>
                     </ul>
                 </li><li class="uk-parent">
                     <a href="#">网络流 <span uk-nav-parent-icon></span></a>
                     <ul class="uk-nav-sub">
-                        <li><a href="#">Sub item</a></li>
-                        <li><a href="#">Sub item</a></li>
+                        <li><a href="#">相关证明</a></li>
+                        <li><a href="#">最大割最小流模型</a></li>
                     </ul>
                 </li><li class="uk-parent">
                     <a href="#">数学理论 <span uk-nav-parent-icon></span></a>
@@ -312,71 +319,8 @@
                         <li><a href="#">go</a></li>
                     </ul>
                 </div>
-        <h3>讨论区</h3>
-        <ul class="uk-comment-list">
-            <li>
-                <article class="uk-comment uk-visible-toggle" tabindex="-1" role="comment">
-                    <header class="uk-comment-header uk-position-relative">
-                        <div class="uk-grid-medium uk-flex-middle" uk-grid>
-                            <div class="uk-width-auto">
-                                <img class="uk-comment-avatar" src="images/avatar.jpg" width="80" height="80" alt="">
-                            </div>
-                            <div class="uk-width-expand">
-                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">作者</a></h4>
-                                <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="#">3天以前</a></p>
-                            </div>
-                        </div>
-                        <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="#">回复</a></div>
-                    </header>
-                    <div class="uk-comment-body">
-                        <p>你说得对，但是乌拉圭的人口有345.7万，同时，仅澳大利亚就有4700万只袋鼠。如果袋鼠决定入侵乌拉圭，那么每一个乌拉圭人要打14只袋鼠，你不知道，你不在乎，你只关心你自己</p>
-                    </div>
-                </article>
-                <ul>
-                    <li>
-                        <article class="uk-comment uk-comment-primary uk-visible-toggle" tabindex="-1" role="comment">
-                            <header class="uk-comment-header uk-position-relative">
-                                <div class="uk-grid-medium uk-flex-middle" uk-grid>
-                                    <div class="uk-width-auto">
-                                        <img class="uk-comment-avatar" src="images/nothing.jpg" width="80" height="80" alt="">
-                                    </div>
-                                    <div class="uk-width-expand">
-                                        <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">袋鼠</a></h4>
-                                        <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="#">1天以前</a></p>
-                                    </div>
-                                </div>
-                                <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="#">回复</a></div>
-                            </header>
-                            <div class="uk-comment-body">
-                                <p>你说得对，但是中国的人口有14亿，同时，仅澳大利亚就有4700万只袋鼠。如果袋鼠决定入侵中国，那么每一个袋鼠要打30个中国人，你不知道，你不在乎，你只关心乌拉圭
-                                    </p>
-                            </div>
-
-                        </article>
-                    </li>
-                    <li>
-                    <li>
-                        <article class="uk-comment  uk-comment-primary  uk-visible-toggle" tabindex="-1" role="comment">
-                            <header class="uk-comment-header uk-position-relative">
-                                <div class="uk-grid-medium uk-flex-middle" uk-grid>
-                                    <div class="uk-width-auto">
-                                        <img class="uk-comment-avatar" src="images/y.jpg" width="80" height="80" alt="">
-                                    </div>
-                                    <div class="uk-width-expand">
-                                        <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Y神</a></h4>
-                                        <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="#">3小时前</a></p>
-                                    </div>
-                                </div>
-                                <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="#">回复</a></div>
-                            </header>
-                            <div class="uk-comment-body">
-                                <p>你说得很对</p>
-                            </div>
-                        </article>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+        <br><br>
+        <iframe src="Comment.html" frameborder="0" width="100%" height="100%" ></iframe>
     </div>
     <script>
         //空即是c++
@@ -425,7 +369,7 @@
         var ll={
             "<a href=\"#\">C++</a>":"",
             "<a href=\"#\">python</a>":"py",
-            "<a href=\"#\">C</a>":"c",
+            "<a href=\"#\">C</a>":"C",
             "<a href=\"#\">Java</a>":"java",
             "<a href=\"#\">go</a>":"go"
         }
